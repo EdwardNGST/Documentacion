@@ -1,0 +1,4 @@
+Obtener texto de un spinner
+Spinner spinner = (Spinner)findViewById(R.id.spinner);
+String text = spinner.getSelectedItem().toString();
+----------------------------------------------------------------

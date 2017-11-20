@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funcion desde el submit</title>
+    </head>
+    <body>
+        <h1>La funcion se ejecuta al dar click en el boton submit</h1>
+        <p style="color:red;">Cargar JQuery</p>
+        <form enctype="multipart/form-data" id="formuploadajax" method="post">
+            Code: <input type="text" name="code" placeholder="Code">
+            <br />
+            Title: <input type="text" name="title" placeholder="Title">
+            <br />
+            Author: <input type="text" name="Author" placeholder="Author">
+            <br />
+            <input type="submit" value="Aceptar"/>
+        </form>
+        <div id="mensaje"></div>
+        <script>
+        $(function(){
+            $("#formuploadajax").on("submit", function(e){
+                e.preventDefault();
+                var formData = new FormData(document.getElementById("formuploadajax"));
+                formData.append("dato", "valor");
+                $.ajax({
+                    url: "model/recibe.php",
+                    type: "post",
+                    dataType: "html",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                })
+                .done(function(res){
+                    $("#mensaje").html("Respuesta: " + res);
+                });
+            });
+        });
+        </script>
+    </body>
+</html>

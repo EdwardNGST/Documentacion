@@ -1,0 +1,2 @@
+Pegar en build.gradle:NombreApp
+maven{url"https://maven.google.com"}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Metodo de Pase de Parametros OnClick</title>
+        <script>
+        function validateUser(user, pass){
+            var parametros = {
+                "user" : user,
+                "pass" : pass
+            };
+            $.ajax({
+                type: "POST",
+                url: "model/Session/validateAdmin.php",
+                data: parametros,
+                success: function(html){
+                    if(html=='true'){
+                        location.href='panelAdmin.php';
+                    }else if(html=='false'){
+                        $("#add_err").html("Usuario o contraseña incorrectos");
+                    }else{
+                        $("#add_err").html("Usuario no encontrado");
+                    }
+                },
+                beforeSend:function(){
+                    $("#add_err").html("Cargando...")
+                }
+            });
+            return false;
+        }
+        </script>
+    </head>
+    <body>
+        <form role="form" class="login-form" autocomplete="off">
+            <div class="form-group">
+        <label class="sr-only" for="username">Numero de Control</label>
+                <input type="text" name="username" id="username" placeholder="ID de Usuario" class="form-username form-control" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="username">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="form-password form-control" autocomplete="off" required>
+            </div>
+      <input style="width:100%; height:5rem;" class="btn btn-success" value="Iniciar Sesión" name="btnValidate" id="btnValidate" type="submit" href="javascript:;" onClick="validateUser($('#username').val(),$('#password').val());return false;">
+        </form>
+    </body>
+</html>

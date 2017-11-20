@@ -1,0 +1,2 @@
+OBTENER TEXTO DE UN ELEMENTO ANDROID STUDIO
+String dato = et1.getText().toString();

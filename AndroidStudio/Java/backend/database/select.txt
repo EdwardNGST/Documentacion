@@ -1,0 +1,3 @@
+SQLiteDatabase db = this.getWritableDatabase();
+String query="select * from tableName where reg=1";
+Cursor res = db.rawQuery(query,null);

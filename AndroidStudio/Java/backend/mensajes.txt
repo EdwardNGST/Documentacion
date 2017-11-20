@@ -1,0 +1,6 @@
+Para imprimir mensajes en la consola de android studio:
+private static final String TAG = "MyActivity"; #No se porque existe esto
+Log.d(TAG, "Mensaje");
+
+#MENSAJES EN PANTALLA
+Toast.makeText(MainActivity.this,"Mensaje",Toast.LENGTH_LONG).show();

@@ -1,0 +1,4 @@
+ContentValues contentValues = new ContentValues();
+contentValues.put(name, "minombre");
+contentValues.put(lastname, "miapellido");
+long result = db.insert(mitabla, null, contentValues);

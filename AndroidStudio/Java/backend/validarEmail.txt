@@ -1,0 +1,12 @@
+Puedes usar la clase Pattern
+
+private boolean validarEmail(String email) {
+    Pattern pattern = Patterns.EMAIL_ADDRESS;
+    return pattern.matcher(email).matches();
+}
+
+Como puedes ver creamos un patrón EMAIL_ADDRESS y comprobamos con el método matcher si el email es correcto.
+
+if (!validarEmail("miEmail@gmail.com")){
+    miEditText.setError("Email no válido")
+}
