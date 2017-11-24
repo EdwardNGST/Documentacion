@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacer visible un elemento invisible</title>
+</head>
+<body>
+	<button id="elemento" style="display:initial;">Elemento Invisible</button>
+
+	<button id="visible" onClick="elementoVisible();return false;">Visible</button>
+	<button id="invisible" onClick="elementoInvisible();return false;">Invisible</button>
+
+	<script type="text/javascript">
+        function elementoVisible(){
+        	$("#elemento").css("visibility", "visible");
+        }
+        function elementoInvisible(){
+        	$("#elemento").css("visibility", "hidden");
+        }
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
