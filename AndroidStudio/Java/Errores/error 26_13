@@ -1,0 +1,25 @@
+Error:(26, 13) Failed to resolve: com.android.support:appcompat-v7:27.+
+<a href="install.m2.repo">Install Repository and sync project</a><br><a href="openFile:C:/Users/alan_/AndroidStudioProjects/Eliminar/ListView/app/build.gradle">Show in File</a><br><a href="open.dependency.in.project.structure">Show in Project Structure dialog</a>
+
+Ir al archivo build.gradle (Project: ListView)
+
+Buscar el codigo:
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+Agregar en repositories:
+
+maven{url"https://maven.google.com"}
+
+Teniendo como resultado el siguiente codigo:
+
+allprojects {
+    repositories {
+        jcenter()
+        maven{url"https://maven.google.com"}
+    }
+}
