@@ -1,0 +1,5 @@
+Al instalar android studio en la version 3 y 3.1 se presentan varios errores que se podrian corregir de la siguiente manera:
+
+Colocar la siguiente linea de codigo en el archivo gradle.properties
+
+android.enableAapt2=false

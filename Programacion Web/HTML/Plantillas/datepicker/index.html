@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DatePicker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	    <div class="col-sm-6 col-sm-offset-3">
+		<h2>date picker</h2>
+		<input type="text" id="datepicker" name="date" class="form-control" placeholder="Date Of Birth" required>
+	 </div>
+	</div>
+</div>
+<script>
+$(function() {
+$( "#datepicker" ).datepicker({
+		dateFormat : 'mm/dd/yy',
+		changeMonth : true,
+		changeYear : true,
+		yearRange: '-100y:c+nn',
+		maxDate: '-1d'
+	});
+});
+</script>
+</body>
+</html>

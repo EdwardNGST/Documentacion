@@ -1,0 +1,68 @@
+<!--MI EJEMPLO-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejecutando funcion al cargar la pagina</title>
+</head>
+<body>
+<h1>Ejecutando funcion al cargar la pagina</h1>
+<script type="text/javascript">
+    function firstTable() {
+      alert("Hola mundo");
+    }
+    window.onload=firstTable;
+</script>
+</body>
+</html>
+<!--1.- Poniendo el tag onload en el <body> de nuestra página para que ejecute nuestra función:-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<head>
+		<title>Test</title>
+		<script>
+		function miFuncion() {
+			alert('OK');
+		}
+		</script>
+	</head>
+	<body onload="miFuncion();">
+		mi pagina...
+	</body>
+</html>
+<!--Llamando a la función directamente desde javascript con window.onload:-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<head>
+		<title>Test</title>
+		<script>
+		function miFuncion() {
+			alert('OK');
+		}
+		window.onload=miFuncion;
+		</script>
+	</head>
+	<body>
+		mi pagina...
+	</body>
+</html>
+<!--3.- Ejecutar nuestro código dentro del window.onload sin llamar a ninguna función:-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<head>
+		<title>Test</title>
+		<script>
+		window.onload=function() {
+			alert('OK');
+		}
+		</script>
+	</head>
+	<body>
+		mi pagina...
+	</body>
+</html>
