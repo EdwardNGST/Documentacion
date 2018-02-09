@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primera letra a mayuscula</title>
+</head>
+<body>
+<center>
+	Ingrese su palabra o nombre
+	<input type="text" id="text"><br><br>
+	<input type="button" value="Convertir primera letra a mayuscula" onclick="clean()">
+</center>
+<script type="text/javascript">
+function clean(){
+	var cadena = document.getElementById("text").value, 
+	nuevaCadena = cadena.trim(); //Esta linea y la anterior eliminan los espacios en blanco al inicio y al final de la palabra
+	nuevaCadena = nuevaCadena.charAt(0).toUpperCase() + nuevaCadena.slice(1); //Pone la primera letra de la palabra en mayuscula
+	alert(nuevaCadena);
+}
+</script>
+</body>
+</html>
