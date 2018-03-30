@@ -11,5 +11,12 @@
         	console.log(e.id);
         }
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").click(function() {
+				alert($(this).attr("id"))
+			});
+		});
+	</script>
 </body>
 </html>

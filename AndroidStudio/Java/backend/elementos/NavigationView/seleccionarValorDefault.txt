@@ -1,0 +1,5 @@
+//Para seleccionar un valor por default de un NavigationView podemos utilizar las siguientes lineas de comandos
+
+BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation2);
+navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+navigation.getMenu().getItem(1).setChecked(true);

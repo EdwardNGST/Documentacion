@@ -1,0 +1,2 @@
+//Para asignar un nuevo nombre a la ventana se necesita agregar la siguiente linea
+setTitle("Nombre Ventana");

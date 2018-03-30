@@ -1,0 +1,63 @@
+#Paso1: Creamos una nueva actividad vacia de nombre N
+Dentro del metodo onCreate
+**********************************************************
+protected void onCreate(Bundle savedInstanceState) {
+	super.onCreate(savedInstanceState);
+	Intent intentMain = new Intent(this, com.example.alan_.bibliotecaitcgv2.MainActivity.class);
+	SystemClock.sleep(1500);
+	startActivity(intentMain);
+}
+**********************************************************
+El intent guarda la referencia a la actividad principal (MainActivity)
+
+SystemClock.sleep(1500) Pausa la app por 1500 milesimas de segundo.
+
+StartActivity inicia el activity que tenia referenciada intentMain (MainActivity en este caso)
+
+#Paso2: En la carpeta Drawable creamos un nuevo XML con el diseño que tendra el SplashScreen
+
+Como ejemplo tenemos lo siguiente:
+**********************************************************
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/varColor" />
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/imagen" />
+    </item>
+
+</layer-list>
+**********************************************************
+<item android:drawable="@color/varColor" />
+Lo anterior especifica que color de fondo tendra nuestro SplashScreen en este caso
+
+<item>
+	<bitmap
+		android:gravity="center"
+		android:src="@drawable/imagen" />
+</item>
+
+Lo anterior especifica que dentro habra un item de una imagen, android:src especifica el nombre de la imagen, se recomienda importar la libreria de Batch Drawable para importar imagenes
+
+#Paso 3 Agregar estilo a styles.xml
+<style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+	<item name="android:windowBackground">@drawable/splash</item>
+</style>
+Esto crea el nuevo estilo "SplashScreen" que tiene como elemento el archivo xml que creamos anteriormente en la carpeta Drawable
+
+La actividad del SplashScreen no cambia en nada
+
+#Paso 4 Decarar SplashScreen en ActivityManifest
+Dentro del activity especificar la ruta de la clase en name y el estilo de fondo en theme
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>

@@ -1,0 +1,49 @@
+#android:layout_below="@+id/idElement"
+Poner el id del elemento de arriba para especificar que el elemento especificado va antes
+Ejemplo: 
+    <RelativeLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent" >
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tabFilter"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libros" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorias" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autores" />
+    </android.support.design.widget.TabLayout>
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_below="@+id/tabFilter"
+        android:scaleType="fitEnd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/round"
+        android:hint="Busqueda"
+        android:inputType="textAutoComplete"/>
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_below="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    
