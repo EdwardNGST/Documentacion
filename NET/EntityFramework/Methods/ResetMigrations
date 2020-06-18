@@ -1,0 +1,5 @@
+1: delete the _MigrationHistory table in SQL Server
+2: Delete your Migrations in your Project (All the content in Migrations Folder)
+3: Run command Enable-Migrations
+4: Run command Add-Migration Initial
+5: Run Update Database

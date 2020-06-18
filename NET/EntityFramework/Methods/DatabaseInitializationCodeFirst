@@ -1,0 +1,19 @@
+---1: Create the connection string---
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <connectionStrings>
+    <add name="SchoolDBConnectionString" 
+    connectionString="Data Source=.;Initial Catalog=SchoolDB-ByConnectionString;Integrated Security=true" 
+    providerName="System.Data.SqlClient"/>
+    </connectionStrings>
+</configuration>
+---2: Defining the class for the CodeFirst---
+namespace SchoolDataLayer
+{
+    public class Context: DbContext 
+    {
+        public SchoolDBContext() : base("name=SchoolDBConnectionString") 
+        {
+        }
+    }
+}

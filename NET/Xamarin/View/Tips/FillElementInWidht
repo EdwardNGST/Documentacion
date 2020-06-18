@@ -1,0 +1,2 @@
+Set the HorizontalOptions for the second StackLayout to FillAndExpand for it to work.
+
