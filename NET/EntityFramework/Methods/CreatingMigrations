@@ -1,0 +1,2 @@
+-----------CREATE A MIGRATION-----------
+add-migration <name of migration>

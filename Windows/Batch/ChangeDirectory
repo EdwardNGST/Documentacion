@@ -1,0 +1,5 @@
+set root=D:\Work\Root
+cd %root%
+CD /D %root%
+-------------------------
+chdir /d D:\Work\Root

@@ -1,0 +1,3 @@
+Visual Studio 2017: Error could not find file …\bin\roslyn\csc.exe
+
+PM > update-package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r

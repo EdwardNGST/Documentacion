@@ -1,0 +1,4 @@
+#LINK CSS IN CSHTML
+<link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+#SCRIPT IN CSHTML
+<script src="~/js/site.min.js" asp-append-version="true"></script>

@@ -1,0 +1,4 @@
+@echo off
+
+start "C:\Windows\system32\notepad.exe"
+start "C:\Program Files\ABCD\abcd.exe"
