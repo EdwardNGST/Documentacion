@@ -1,0 +1,2 @@
+#Crear un componente de un entry con contraseña
+<PasswordBox Height="42" Width="200" Margin="22,28,28,0" Name="passwordBox1" VerticalAlignment="Top" Background="LightBlue" Foreground="DarkBlue" MaxLength="25" PasswordChar="*" Password="mahesh" PasswordChanged="passwordBox1_PasswordChanged" />  

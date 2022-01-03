@@ -1,0 +1,5 @@
+"CS8700: Multiple analyzer config files cannot be in the same directory" but only one StyleCop file
+
+Turns out the issue is trying to reference the .editorconfig file from the projects. I deleted the references and just left the file as a solution item in the root of the solution. Most of the settings I have worked fine from there, but I had some StyleCop severity settings that weren't getting picked up properly for the analyzer.
+
+To fix that, I changed to using GlobalSuppressions.cs files for each project individually. I could probably have bundled these together and referenced them like I'm doing with the stylecop.json file, but decided that limiting the suppression scopes was probably more appropriate.
