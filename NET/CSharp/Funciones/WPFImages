@@ -1,0 +1,4 @@
+private void aPicture_MouseDown(object sender, MouseEventArgs e)
+{
+   //do something here
+}

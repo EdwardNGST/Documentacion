@@ -1,0 +1,9 @@
+URL: https://www.ghacks.net/2011/03/12/how-to-remove-services-in-windows/
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services
+
+Open the Windows Registry
+Navigate to the key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services
+Backup the services key
+Identify the service that you want to delete
+Left-click on that service and press delete on the keyboard

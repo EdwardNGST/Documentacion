@@ -1,0 +1,9 @@
+Start
+
+sudo service smbd start
+Stop
+
+sudo service smbd stop
+Restart
+
+sudo service smbd restart

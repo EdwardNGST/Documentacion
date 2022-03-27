@@ -1,0 +1,5 @@
+using System.Windows.Media;
+
+Color color = (Color)ColorConverter.ConvertFromString("#FFDFD991");
+---------------------------------
+System.Drawing.Color col = System.Drawing.ColorTranslator.FromHtml("#FFCC66");
