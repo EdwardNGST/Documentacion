@@ -1,0 +1,4 @@
+sc.exe create DemoWorker binpath= PathToThePublishFolder\YourWorkerClassName.exe
+sc.exe start YourWorkerClassName
+
+URL: https://anthonygiretti.com/2020/01/02/building-a-windows-service-with-worker-services-and-net-core-3-1-part-1-introduction/

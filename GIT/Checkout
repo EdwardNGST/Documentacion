@@ -1,0 +1,4 @@
+#Commit
+git checkout <commit hash>
+#Branch
+git checkout <name branch>

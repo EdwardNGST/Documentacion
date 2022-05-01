@@ -1,0 +1,13 @@
+#Dialogo para guardar archivo
+
+SaveFileDialog saveFileDialog = new SaveFileDialog();
+if(saveFileDialog.ShowDialog() == true)
+	File.WriteAllText(saveFileDialog.FileName, txtEditor.Text);
+
+Filtro de archivo
+saveFileDialog.Filter = "Text file (*.txt)|*.txt|C# file (*.cs)|*.cs";
+
+Directorio inicial
+saveFileDialog.InitialDirectory = @"c:\temp\";
+-----------------------
+saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);

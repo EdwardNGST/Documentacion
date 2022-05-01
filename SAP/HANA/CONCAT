@@ -1,0 +1,5 @@
+CREATE VIEW "dbo"."ViewSample"
+    AS
+    SELECT CONCAT("column1", CONCAT(' / ', "cloumn2")) AS CollectionLabel
+    FROM "dbo"."T1" T1
+    CROSS JOIN "dbo"."T2" T2

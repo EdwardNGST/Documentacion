@@ -1,0 +1,49 @@
+Apagado Normal
+shutdown -h
+Linux se apaga en un minuto. La opción -h indica el apagado o la parada del sistema. Normalmente se puede conseguir lo mismo indicando solo el comando de apagado.
+
+shutdown
+Reiniciar Linux de forma estándar
+ 
+
+shutdown -r
+
+Apagar Linux inmediatamente
+
+shutdown -h 0
+Linux se apaga inmediatamente. El comando de apagado es seguido aquí por la opción h y el tiempo 0 para indicar la inmediatez. Otro comando mucho más común para el apagado inmediato de Linux es el siguiente:
+
+shutdown now
+Reiniciar Linux inmediatamente
+ 
+
+shutdown -r 0
+Así, Linux se reinicia inmediatamente. Después del comando de apagado se indican la opción r y el tiempo 0 para señalar que se debe realizar de inmediato. Este es otro comando que se utiliza con frecuencia para el reinicio inmediato de Linux:
+
+shutdown -r now
+
+Apagar Linux al cabo de 20 minutos
+ 
+
+shutdown -h 20
+Linux se apaga 20 minutos después de introducir el comando. El siguiente comando es más común y tiene el mismo resultado:
+
+shutdown +20
+Reiniciar Linux al cabo de 20 minutos
+ 
+
+shutdown -r 20
+Linux se reinicia 20 minutos después de introducir el comando. Se puede añadir el signo de más a este comando.
+
+shutdown -r +20
+Apagar Linux a las 17:30 horas
+ 
+
+shutdown -h 17:30
+En Linux, las horas se indican en un formato de 24 horas según el esquema hh:mm. En este ejemplo, Linux se apaga a las 17:30 horas. En este caso también se puede omitir la h, que indica explícitamente que se debe apagar o suspender el sistema:
+
+shutdown 17:30
+Linux se reinicia a las 17:30 horas
+ 
+
+shutdown -r 17:30

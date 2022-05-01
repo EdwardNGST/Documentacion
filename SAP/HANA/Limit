@@ -1,0 +1,30 @@
+SAP HANA: LIMIT with OFFSET keywords
+LIMIT:
+
+The limit keyword is used to limit the number of rows returned in a  query result. 
+
+SYNTAX:
+
+LIMIT <unsigned_integer>
+
+EXAMPLE:
+
+select * from "KABIL_PRACTICE"."OFFSET"  limit 4;
+---------------------------------------------------------------------------------------------------------------------------
+LIMIT with OFFSET:
+
+Returns the first <unsigned_integer> grouped records after skipping OFFSET<unsigned_integer> for each grouping set.
+
+SYNTAX:
+
+LIMIT <unsigned_integer> [OFFSET <unsigned_integer>]
+
+EXAMPLE:
+
+select * from "KABIL_PRACTICE"."OFFSET"  limit 4 offset 2;
+
+URL: http://kabilsapworld.blogspot.com/2017/09/sap-hana-limit-with-offset-keywords.html
+
+SELECT TOP :NUM_OF_ROWS * FROM TABLE_NAME
+
+URL: https://stackoverflow.com/questions/41592876/sap-hana-select-top-expression

@@ -1,0 +1,5 @@
+#ERROR: ¿WPF El subproceso que realiza la llamada no puede obtener acceso?
+Application.Current.Dispatcher.Invoke(new Action(() =>
+    {
+        //INSTRUCCIONES A LA UI
+    }));

@@ -1,0 +1,2 @@
+#Detener tarea
+Taskkill /IM OneDrive.exe /F

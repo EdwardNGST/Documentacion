@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NET",
-    "\\NET\\CSharp",
-    "\\NET\\CSharp\\Funciones"
+    "\\GIT",
+    "\\NET\\Errores",
+    "\\NET\\WPF",
+    "\\NET\\WPF\\Controles",
+    "\\NET\\WPF\\Errores",
+    "\\SAP",
+    "\\SAP\\HANA"
   ],
+  "SelectedNode": "\\GIT\\Checkout",
   "PreviewInSolutionExplorer": false
 }

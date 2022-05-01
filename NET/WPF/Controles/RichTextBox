@@ -1,0 +1,17 @@
+#Limpiar RichTextBox
+
+Try this
+
+private void richTextBox1_Click(object sender, EventArgs e)
+{
+  if (richTextBox1.Text == "Input Text Here")
+  {
+    richTextBox1.Clear();
+    richTextBox1.Focus();
+  }
+}
+
+//OPCION 2
+
+richTextBox1.Clear();                 // Form
+richTextBox1.Document.Blocks.Clear(); // WPF

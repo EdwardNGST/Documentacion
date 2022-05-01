@@ -1,0 +1,11 @@
+SELECT editorial.nombre AS Proveedor
+FROM Editorial INNER JOIN
+(Libros INNER JOIN Facturas ON Libros.codlibro=Facturas.codlibro)
+ON Editorial.codeditorial=Libros.codeditorial;
+
+SELECT DISTINCT nombre FROM clientes;	
+
+SELECT DISTINCTROW nombre FROM clientes;	
+
+URL: https://luciamonterorodriguez.com/sql-como-evitar-resultados-duplicados/
+

@@ -1,0 +1,12 @@
+#Crear una carpeta
+md "c:SoftZone"
+#Crear varias carpetas
+md sz1 sz2 sz3 sz4
+
+#Para convertir una carpeta cualquiera en una carpeta oculta y protegida, lo que debemos hacer es usar los parámetros «+h» y «+s». Por ejemplo:
+
+attrib +s +h "c:/SoftZonesz1"
+
+#En caso de querer volver a mostrar la carpeta, lo que debemos hacer es quitarle los parámetros que le acabamos de asignar. Esto podemos hacerlo fácilmente cambiando los «+» por los «-«, como, por ejemplo, con:
+
+attrib -s -h "c:/SoftZonesz1"
