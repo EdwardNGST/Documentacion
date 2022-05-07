@@ -1,0 +1,25 @@
+Add an image in a WPF button
+In the case of a 'missing' image there are several things to consider:
+
+When XAML can't locate a resource it might ignore it (when it won't throw a XamlParseException)
+
+The resource must be properly added and defined:
+
+Make sure it exists in your project where expected.
+
+Make sure it is built with your project as a resource.
+
+(Right click → Properties → BuildAction='Resource')
+
+Snippet
+
+Another thing to try in similar cases, which is also useful for reusing of the image (or any other resource):
+
+Define your image as a resource in your XAML:
+
+<UserControl.Resources>
+     <Image x:Key="MyImage" Source.../>
+</UserControl.Resources>
+And later use it in your desired control(s):
+
+<Button Content="{StaticResource MyImage}" />
