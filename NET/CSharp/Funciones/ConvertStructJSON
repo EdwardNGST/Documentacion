@@ -1,0 +1,6 @@
+var serializer = new JavaScriptSerializer();
+YourStruct myStruct = new YourStruct(x,y,z);
+var json = serializer.Serialize(myStruct);
+-------------------------
+YourStruct myStruct = new YourStruct(x,y,z);
+var json = JsonConvert.SerializeObject(myStruct);
