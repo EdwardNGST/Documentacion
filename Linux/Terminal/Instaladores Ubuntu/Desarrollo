@@ -1,0 +1,4 @@
+#Git
+sudo apt-get update
+udo apt-get install git-all
+git version

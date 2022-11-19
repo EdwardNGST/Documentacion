@@ -1,0 +1,3 @@
+#FortiClient
+sudo yum-config-manager --add-repo https://repo.fortinet.com/repo/7.0/centos/8/os/x86_64/fortinet.repo
+sudo yum install forticlient

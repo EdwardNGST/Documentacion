@@ -1,0 +1,9 @@
+#FortiClient
+wget -O - https://repo.fortinet.com/repo/7.0/ubuntu/DEB-GPG-KEY | sudo apt-key add -
+
+
+Add the following line in /etc/apt/sources.list
+https://repo.fortinet.com/repo/7.0/ubuntu xenial multiverse
+
+sudo apt-get update
+sudo apt install forticlient
